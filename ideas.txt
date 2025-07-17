@@ -1,0 +1,99 @@
+Here's a list of relatively simple computational physics experiments suitable for educational purposes, categorized by physics domain. These experiments focus on core concepts and can be implemented with basic programming knowledge (e.g., Python with NumPy and Matplotlib).
+
+---
+
+### **I. Classical Mechanics**
+
+1.  **Projectile Motion with Air Resistance:**
+    * **Concept:** Model the trajectory of a projectile considering both gravity and a drag force proportional to velocity or velocity squared.
+    * **Experiment:** Simulate the path, range, and time of flight for various initial velocities and angles, with and without air resistance. Explore the effect of different drag coefficients.
+    * **Computational Aspects:** Numerical integration (e.g., Euler-Cromer method) of Newton's second law.
+
+2.  **Simple Pendulum:**
+    * **Concept:** Oscillatory motion, small angle approximation vs. large angle behavior, energy conservation.
+    * **Experiment:** Simulate the angular displacement over time for a simple pendulum. Compare the period for small and large amplitudes. Investigate energy conservation.
+    * **Computational Aspects:** Solving a second-order ordinary differential equation (ODE) numerically.
+
+3.  **Spring-Mass System (Harmonic Oscillator):**
+    * **Concept:** Simple harmonic motion, Hooke's Law, energy transformation (potential to kinetic).
+    * **Experiment:** Simulate the position and velocity of a mass attached to a spring. Explore the effect of different spring constants and damping.
+    * **Computational Aspects:** Numerical integration of the equation of motion for a damped/undamped harmonic oscillator.
+
+4.  **Two-Body Gravitational System (e.g., Earth-Moon, Sun-Planet):**
+    * **Concept:** Newton's Law of Universal Gravitation, orbital mechanics, conservation of angular momentum and energy.
+    * **Experiment:** Simulate the orbits of two bodies under mutual gravitational attraction. Observe elliptical orbits.
+    * **Computational Aspects:** Numerical integration of coupled ODEs for positions and velocities in 2D.
+
+5.  **Billiards/Collision Simulation (1D or 2D):**
+    * **Concept:** Conservation of momentum and kinetic energy in elastic and inelastic collisions.
+    * **Experiment:** Simulate collisions between a few particles. For 1D, calculate final velocities after collision. For 2D, consider simple geometries (e.g., particles as circles).
+    * **Computational Aspects:** Implementing collision detection and response rules.
+
+---
+
+### **II. Electromagnetism**
+
+1.  **Electric Field and Potential of Point Charges:**
+    * **Concept:** Coulomb's Law, superposition principle, electric potential.
+    * **Experiment:** Calculate and visualize the electric field vectors and equipotential lines around a system of static point charges (e.g., dipole, quadrupole).
+    * **Computational Aspects:** Vector summation, scalar summation, plotting vector fields and contour plots.
+
+2.  **Motion of a Charged Particle in Uniform Electric/Magnetic Fields:**
+    * **Concept:** Lorentz force, cyclotron motion, velocity selectors.
+    * **Experiment:** Simulate the trajectory of a charged particle released into uniform electric or magnetic fields, or a combination.
+    * **Computational Aspects:** Numerical integration of Newton's second law with the Lorentz force.
+
+---
+
+### **III. Thermodynamics and Statistical Mechanics**
+
+1.  **Ideal Gas Simulation (2D Molecular Dynamics - simplified):**
+    * **Concept:** Kinetic theory of gases, pressure, temperature, collisions.
+    * **Experiment:** Simulate a small number of particles in a 2D box undergoing elastic collisions with each other and the walls. Observe particle motion and macroscopic properties (e.g., average kinetic energy).
+    * **Computational Aspects:** Simple collision detection and momentum/energy exchange, periodic boundary conditions (optional).
+
+2.  **Ising Model (1D or 2D - basic):**
+    * **Concept:** Phase transitions, magnetism, statistical mechanics, Monte Carlo methods.
+    * **Experiment:** Implement a basic Ising model using a Metropolis algorithm. Observe how the magnetization changes with temperature.
+    * **Computational Aspects:** Random number generation, basic Monte Carlo steps (flipping spins, calculating energy changes).
+
+---
+
+### **IV. Waves and Optics**
+
+1.  **Wave Propagation (1D String or Sound Wave):**
+    * **Concept:** Wave equation, superposition, reflection, transmission.
+    * **Experiment:** Simulate a pulse or continuous wave propagating along a 1D medium using finite difference methods. Explore fixed and free boundary conditions.
+    * **Computational Aspects:** Solving a partial differential equation (PDE) numerically using finite differences.
+
+2.  **Diffraction Grating (Fraunhofer Diffraction):**
+    * **Concept:** Interference, diffraction, Huygens' principle, superposition of waves.
+    * **Experiment:** Calculate and visualize the intensity pattern produced by light passing through a single slit or multiple slits (diffraction grating).
+    * **Computational Aspects:** Summation of complex exponentials, Fourier Transform (for more advanced versions).
+
+---
+
+### **V. Quantum Mechanics (Basic)**
+
+1.  **Particle in a Box (1D Infinite Potential Well):**
+    * **Concept:** Quantization of energy, wave functions, probability density.
+    * **Experiment:** Numerically solve the time-independent Schrödinger equation for a 1D infinite potential well. Visualize the wave functions and probability densities for different energy levels.
+    * **Computational Aspects:** Solving a second-order ODE (eigenvalue problem) numerically, or directly plotting analytical solutions.
+
+2.  **Quantum Tunneling through a Rectangular Barrier (Time-Independent):**
+    * **Concept:** Wave-particle duality, tunneling probability.
+    * **Experiment:** Solve the time-independent Schrödinger equation for a particle encountering a rectangular potential barrier. Calculate and visualize the transmission and reflection coefficients.
+    * **Computational Aspects:** Solving a second-order ODE, matching boundary conditions.
+
+---
+
+### **General Computational Skills to Emphasize:**
+
+* **Numerical Integration:** Euler, Euler-Cromer, Runge-Kutta (RK2/RK4).
+* **Vector Operations:** Dot products, cross products, normalization.
+* **Plotting and Visualization:** Using libraries like Matplotlib to create graphs, animations, and contour plots.
+* **Looping and Iteration:** Simulating time evolution or spatial variations.
+* **Conditional Statements:** For collision detection, boundary conditions.
+* **Data Analysis:** Calculating averages, standard deviations, or other statistical measures from simulation data.
+
+These experiments provide a good balance between conceptual understanding and practical programming skills, making them ideal for educational settings.
