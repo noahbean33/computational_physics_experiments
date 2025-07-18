@@ -11,8 +11,14 @@ computational_physics_experiments/
 ├── notebooks/             # Jupyter notebooks organized by topic
 │   ├── cellular_automata/
 │   ├── classical_mechanics/
+│   ├── computational_methods/
+│   ├── electromagnetism/
+│   ├── general_relativity/
 │   ├── quantum_mechanics/
-│   └── statistical_mechanics/
+│   └── misc/
+├── examples/
+│   ├── scripts/           # Standalone Python scripts
+│   └── misc/              # Miscellaneous files
 ├── src/                   # Source code (Python modules)
 │   ├── utils/             # Utility functions
 │   └── visualization/     # Visualization helpers
@@ -51,7 +57,7 @@ computational_physics_experiments/
 
 5. Run tests to verify the installation:
    ```bash
-   pytest tests/
+   PYTHONPATH=. pytest tests/
    ```
 
 6. Launch Jupyter Lab/Notebook:
@@ -66,6 +72,8 @@ computational_physics_experiments/
 - Each experiment is contained in its own Jupyter notebook in the `notebooks/` directory.
 - Reusable code and utilities are in the `src/` directory.
 - Data files should be stored in the `data/` directory.
+- Standalone Python scripts have been moved to the `examples/scripts/` directory,
+  with additional miscellaneous files in `examples/misc/`.
 
 ## Topics Covered
 
